@@ -11,7 +11,7 @@
  struct node* inseratbegining(struct node* head, int new_data){
     //create new node with the given data
     struct node* new_node = createnode(new_data);
-     // Make the next of the new node point to the current
+    // Make the next of the new node point to the current
     // head
     new_node->next = head;
     // Return the new node as the new head of the list
@@ -33,7 +33,7 @@
     return new_node;
  }
  int main(){
-    struct node* head = createnode(8);
+    struct node* head = createnode(2);
     head->next = createnode(3);
     head->next->next = createnode(4);
     head->next->next->next = createnode(5);
@@ -45,3 +45,13 @@
 
     return 0;
  }
+ /*
+ NOTE:-
+ Time Complexity: O(1), We have a pointer to the head and we can directly attach a node and update the head pointer. So, the Time complexity of inserting a node at the head position is O(1).
+Auxiliary Space: O(1)
+ */
+
+/*
+output
+1 2 3 4 5 6
+*/
