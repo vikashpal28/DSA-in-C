@@ -52,4 +52,13 @@
     int key = 6,new_data = 4;
     head = insertAfter(head,key, new_data);
     printlinked_list(head);
+    return 0;
  }
+/*
+NOTE:-
+Time complexity: O(n), where n is the number of nodes in the linked list.
+Auxiliary Space: O(1)
+*/
+/*
+OUTPUT
+ 2 3 5 6 4*/
